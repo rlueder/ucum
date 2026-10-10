@@ -13,6 +13,9 @@ It does not contain a runtime validator or converter.
   changes, and identify any dependency on another PR.
 - Use Conventional Commits for commit messages and PR titles, such as
   `docs: clarify table headings` or `fix: correct case-insensitive references`.
+- When a change is based on an upstream issue, link its full URL in the PR body
+  using a reference such as `ucum-org/ucum#419`. Distinguish direct fixes from
+  related context, and preserve these references in merged PR descriptions.
 
 ## Writing for reviewers
 
