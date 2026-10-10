@@ -16,7 +16,8 @@ It does not contain a runtime validator or converter.
 
 ## Writing for reviewers
 
-- Lead PR descriptions with concrete before/after examples. For example,
+- Start PR descriptions with a sentence explaining the problem and why it
+  matters, then show concrete before/after examples. For example,
   `MHO = 1 S` becomes `MHO = 1 SIE`: in the case-insensitive system, `S` means
   seconds and `SIE` means siemens.
 - Use a short paragraph or small comparison table, followed by the validation
