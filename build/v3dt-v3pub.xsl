@@ -275,11 +275,12 @@
 <!-- MORE INTERESTING THINGS BELOW -->
 
 <!-- figures and UML diagrams -->
-<xsl:template match="figure">
-  <graphic source="graphics/{pixmap/@source}" alt="{caption}"/>
-</xsl:template>
-<xsl:template match="uml">
-  <graphic source="graphics/{pixmap/@source}" alt="{caption}"/>
+<xsl:template match="figure|uml">
+  <!-- Keep absolute URIs and paths; resolve relative names in graphics/. -->
+  <xsl:variable name="source" select="string(pixmap/@source)"/>
+  <graphic source="{if (matches($source, '^([A-Za-z][A-Za-z0-9+.-]*:|/)'))
+                   then $source else concat('graphics/', $source)}"
+           alt="{caption}"/>
 </xsl:template>
 
 <!-- Requirement elements contain normal content that should be indented
