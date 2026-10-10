@@ -91,7 +91,14 @@
     <xsl:text> = </xsl:text>
     <xsl:value-of select="value/@value"/>
     <xsl:text> </xsl:text>
-    <xsl:value-of select="value/@Unit"/>
+    <xsl:choose>
+      <xsl:when test="$case='insensitive'">
+        <xsl:value-of select="value/@UNIT"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:value-of select="value/@Unit"/>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:choose>
       <xsl:when test="@isMetric='yes'">
         <xsl:text> metric </xsl:text>

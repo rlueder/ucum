@@ -773,7 +773,7 @@
       <name>knot</name>
       <printSymbol>knot</printSymbol>
       <property>velocity</property>
-      <value Unit="[nmi_i]/h" UNIT="[NMI_I]/H" value="1">1</value>
+      <value Unit="[nmi_i]/h" UNIT="[NMI_I]/HR" value="1">1</value>
    </unit>
    <unit Code="[sin_i]" CODE="[SIN_I]" isMetric="no" class="intcust">
       <name>square inch</name>
@@ -978,7 +978,7 @@
    <unit Code="[kn_br]" CODE="[KN_BR]" isMetric="no" class="brit-length">
       <name>knot</name>
       <property>velocity</property>
-      <value Unit="[nmi_br]/h" UNIT="[NMI_BR]/H" value="1">1</value>
+      <value Unit="[nmi_br]/h" UNIT="[NMI_BR]/HR" value="1">1</value>
    </unit>
    <unit Code="[acr_br]" CODE="[ACR_BR]" isMetric="no" class="brit-length">
       <name>acre</name>
@@ -1946,7 +1946,7 @@
       <name>mho</name>
       <printSymbol>mho</printSymbol>
       <property>electric conductance</property>
-      <value Unit="S" UNIT="S" value="1">1</value>
+      <value Unit="S" UNIT="SIE" value="1">1</value>
    </unit>
    <unit Code="[psi]" CODE="[PSI]" isMetric="no" class="misc">
       <name>pound per square inch</name>

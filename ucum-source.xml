@@ -1949,7 +1949,7 @@
           <u:unit id="500050" Code="[mi_i]" CODE="[MI_I]" isMetric="no"><name>mile</name><printSymbol>mi</printSymbol><property>length</property><value Unit="[ft_i]" UNIT="[FT_I]" value="5280">5280</value></u:unit>
           <u:unit id="500070" Code="[fth_i]" CODE="[FTH_I]" isMetric="no"><name>fathom</name><printSymbol>fth</printSymbol><property>depth of water</property><value Unit="[ft_i]" UNIT="[FT_I]" value="6">6</value></u:unit>
           <u:unit id="500080" Code="[nmi_i]" CODE="[NMI_I]" isMetric="no"><name>nautical mile</name><printSymbol>n.mi</printSymbol><property>length</property><value Unit="m" UNIT="M" value="1852">1852</value></u:unit>
-          <u:unit id="500090" Code="[kn_i]" CODE="[KN_I]" isMetric="no"><name>knot</name><printSymbol>knot</printSymbol><property>velocity</property><value Unit="[nmi_i]/h" UNIT="[NMI_I]/H" value="1">1</value></u:unit>
+          <u:unit id="500090" Code="[kn_i]" CODE="[KN_I]" isMetric="no"><name>knot</name><printSymbol>knot</printSymbol><property>velocity</property><value Unit="[nmi_i]/h" UNIT="[NMI_I]/HR" value="1">1</value></u:unit>
           <u:unit id="500100" Code="[sin_i]" CODE="[SIN_I]" isMetric="no"><name>square inch</name><property>area</property><value Unit="[in_i]2" UNIT="[IN_I]2" value="1">1</value></u:unit>
           <u:unit id="500110" Code="[sft_i]" CODE="[SFT_I]" isMetric="no"><name>square foot</name><property>area</property><value Unit="[ft_i]2" UNIT="[FT_I]2" value="1">1</value></u:unit>
           <u:unit id="500120" Code="[syd_i]" CODE="[SYD_I]" isMetric="no"><name>square yard</name><property>area</property><value Unit="[yd_i]2" UNIT="[YD_I]2" value="1">1</value></u:unit>
@@ -2088,7 +2088,7 @@
           <u:unit id="500410" Code="[yd_br]" CODE="[YD_BR]" isMetric="no"><name>yard</name><property>length</property><value Unit="[ft_br]" UNIT="[FT_BR]" value="3">3</value></u:unit>
           <u:unit id="500420" Code="[mi_br]" CODE="[MI_BR]" isMetric="no"><name>mile</name><property>length</property><value Unit="[ft_br]" UNIT="[FT_BR]" value="5280">5280</value></u:unit>
           <u:unit id="500430" Code="[nmi_br]" CODE="[NMI_BR]" isMetric="no"><name>nautical mile</name><property>length</property><value Unit="[ft_br]" UNIT="[FT_BR]" value="6080">6080</value></u:unit>
-          <u:unit id="500440" Code="[kn_br]" CODE="[KN_BR]" isMetric="no"><name>knot</name><property>velocity</property><value Unit="[nmi_br]/h" UNIT="[NMI_BR]/H" value="1">1</value></u:unit>
+          <u:unit id="500440" Code="[kn_br]" CODE="[KN_BR]" isMetric="no"><name>knot</name><property>velocity</property><value Unit="[nmi_br]/h" UNIT="[NMI_BR]/HR" value="1">1</value></u:unit>
           <u:unit id="500450" Code="[acr_br]" CODE="[ACR_BR]" isMetric="no"><name>acre</name><property>area</property><value Unit="[yd_br]2" UNIT="[YD_BR]2" value="4840">4840</value></u:unit>
         </u:units>
         <comment>
@@ -3112,7 +3112,7 @@
           <u:unit id="600390" Code="Ao" CODE="AO" isMetric="no"><name>&Aring;ngstr&ouml;m</name><printSymbol>&Aring;</printSymbol><property>length</property><value Unit="nm" UNIT="NM" value="0.1">0.1</value></u:unit>
           <u:unit id="600400" Code="b" CODE="BRN" isMetric="no"><name>barn</name><printSymbol>b</printSymbol><property>action area</property><value Unit="fm2" UNIT="FM2" value="100">100</value></u:unit>
           <u:unit id="600412" Code="att" CODE="ATT" isMetric="no"><name>technical atmosphere</name><printSymbol>at</printSymbol><property>pressure</property><value Unit="kgf/cm2" UNIT="KGF/CM2" value="1">1</value></u:unit>
-          <u:unit id="600411" Code="mho" CODE="MHO" isMetric="yes"><name>mho</name><printSymbol>mho</printSymbol><property>electric conductance</property><value Unit="S" UNIT="S" value="1">1</value></u:unit>
+          <u:unit id="600411" Code="mho" CODE="MHO" isMetric="yes"><name>mho</name><printSymbol>mho</printSymbol><property>electric conductance</property><value Unit="S" UNIT="SIE" value="1">1</value></u:unit>
           <u:unit id="600413" Code="[psi]" CODE="[PSI]" isMetric="no"><name>pound per square inch</name><printSymbol>psi</printSymbol><property>pressure</property><value Unit="[lbf_av]/[in_i]2" UNIT="[LBF_AV]/[IN_I]2" value="1">1</value></u:unit>
           <u:unit id="600010" Code="circ" CODE="CIRC" isMetric="no"><name>circle</name><printSymbol>circ</printSymbol><property>plane angle</property><value Unit="[pi].rad" UNIT="[PI].RAD" value="2">2</value></u:unit>
           <u:unit id="600020" Code="sph" CODE="SPH" isMetric="no"><name>sphere</name><printSymbol>sph</printSymbol><property>solid angle</property><value Unit="[pi].sr" UNIT="[PI].SR" value="4">4</value></u:unit>
