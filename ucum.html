@@ -4,10 +4,9 @@
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <title>The Unified Code for Units of Measure</title>
-   <link rel="stylesheet" type="text/css" href="v3m00.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/v3m00.css">
    <style type="text/css"></style>
-   <link rel="stylesheet" type="text/css" href="xml-verbatim.css">
-   <script type="text/javascript" src="xml-verbatim.js"></script>
+   <link rel="stylesheet" type="text/css" href="assets/css/xml-verbatim.css">
 </head>
 
 <body>
@@ -1133,9 +1132,9 @@
       &nbsp;&nbsp;&nbsp;
       &nbsp;<strong><sup>&nbsp;■1</sup></strong>
       Special units are marked in the definition tables for unit atoms by a
-      bullet (‘•’) in the column titled “value”
+      bullet (‘•’) in the column titled “definition value”
       and a special expression in the column titled
-      “definition”. The BNF for the special expression is &lt;<em>special-unit</em>&gt; ::=
+      “definition unit”. The BNF for the special expression is &lt;<em>special-unit</em>&gt; ::=
       &lt;<em>function-symbol</em>&gt;“<code>(</code>”&lt;<em>floating-point-number</em>&gt;“<code> </code>”&lt;<em>term</em>&gt;“<code>)</code>”
       The function symbols are defined as
       needed.
@@ -1189,8 +1188,8 @@
       &nbsp;&nbsp;&nbsp;
       &nbsp;<strong><sup>&nbsp;■1</sup></strong>
       Arbitrary units are marked in the definition tables for unit atoms by a
-      bullet (‘•’) in the column titled “value”
-      and a bullet in the column titled “definition”.
+      bullet (‘•’) in the column titled “definition value”
+      and a bullet in the column titled “definition unit”.
 
    </p>
    <table border="0" cellpadding="0" cellspacing="0" height="0" width="100%" class="header">
@@ -1595,7 +1594,7 @@
          3</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong> There are seven columns titled “name,”
       “print,” “c/s,” “c/i,”
-      “M,” “value,” and “definition.”
+      “M,” “definition value,” and “definition unit.”
       The name is the full (official) name of the unit. The symbol
       recommended for use in print is listed in the column
       “print.” “C/s,” and “c/i” list the
@@ -1603,11 +1602,12 @@
       respectively.
       The column “M” specifies whether this is a
       metric unit.
-      The definition is a valid case sensitive expression of
+      The definition value is the numeric factor by which the definition
+         unit is multiplied. The definition unit is a valid case sensitive expression of
       <em>The Unified Code for Units of Measure</em> that defines the unit atom.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. Full name and print symbol are out of scope of <em>The Unified Code for Units of Measure</em>.
       &nbsp;<strong><sup>&nbsp;■4</sup></strong>
       The units named “parts per <em>N</em>” are provided to be used
@@ -1756,10 +1756,11 @@
          Générale des Poids et Mesures</em> (CGPM). <em>The Unified Code for Units of Measure</em> definitions
       for those units are given in <a href="#si">Table
          4</a>.
-      &nbsp;<strong><sup>&nbsp;■2</sup></strong> There are seven columns titled “name,”
-      “print,” “c/s,” “c/i,”
-      “M,” “value,” and “definition.”
-      The name is the full (official) name of the unit. The symbol
+      &nbsp;<strong><sup>&nbsp;■2</sup></strong> There are eight columns titled “name,”
+      “kind of quantity,” “print,” “c/s,” “c/i,”
+      “M,” “definition value,” and “definition unit.”
+      The name is the full (official) name of the unit. The kind of
+         quantity describes the property measured by the unit. The symbol
       recommended for use in print is listed in the column
       “print.” “C/s,” and “c/i” list the
       symbol in the case sensitive and the case insensitive variants
@@ -1767,14 +1768,17 @@
       The column “M” specifies whether this is a
       metric unit.
       The definition
-      is a valid case sensitive expression of <em>The Unified Code for Units of Measure</em> that defines the unit
+      value is the numeric factor by which the definition
+         unit is multiplied. The definition unit is a valid case sensitive expression of <em>The Unified Code for Units of Measure</em> that defines the unit
       atom.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. Full name and print symbol are defined by the CGPM and are
       out of scope of <em>The Unified Code for Units of Measure</em>.
-      &nbsp;<strong><sup>&nbsp;■4</sup></strong>
+      Kind of quantity is explanatory and is not
+         normative.
+         &nbsp;<strong><sup>&nbsp;■4</sup></strong>
       The function pair denoted “<code>cel(1 K)</code>” is
       defined as <em>f</em><sub>C</sub>(<em>x</em>) = <em>x</em> - 273.15 to
       convert from kelvin to degree Celsius, and
@@ -2096,7 +2100,7 @@
       The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. Full name and print symbol are defined by ISO&nbsp;1000 and are
       out of scope of <em>The Unified Code for Units of Measure</em>.
 
@@ -2582,7 +2586,7 @@
       The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. Full name and print symbol are defined by ISO&nbsp;1000 and are
       out of scope of <em>The Unified Code for Units of Measure</em>.
 
@@ -2832,7 +2836,7 @@
       The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. Full name and print symbol are out of scope of <em>The Unified Code for Units of Measure</em>.
 
    </p>
@@ -3256,13 +3260,13 @@
       “print” is not available.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. The full name is out of scope of <em>The Unified Code for Units of Measure</em>.
       &nbsp;<strong><sup>&nbsp;■4</sup></strong>
       The special symbols for “square inch,” “cubic
       foot,” etc. are deprecated. The preferred expressions use the
       exponents 2 and 3 respectively as shown in the column
-      “definition”
+      “definition unit”
 
    </p>
    <table xmlns:u="http://aurora.regenstrief.org/UCUM" class="standard" id="intcust" omit="printSymbol">
@@ -3560,7 +3564,7 @@
       U.S. Metric Law of 1866 and the definition of foot and yard that was
       valid from 1893 until 1959.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       <span class="small">
          [Barry N. Taylor, <em>Guide to the Use of the International System of
             Units (SI)</em> [NIST Special Publication 811], National Institute for
@@ -3813,7 +3817,7 @@
          10</a> defines symbols for the older British Imperial lengths as of
       the British Weights and Measures Act of 1824.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
 
    </p>
    <table xmlns:u="http://aurora.regenstrief.org/UCUM" class="standard" id="brit-length" omit="printSymbol">
@@ -4003,7 +4007,7 @@
       defined in <a href="#us-volumes">Table
          11</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
 
    </p>
    <table xmlns:u="http://aurora.regenstrief.org/UCUM" class="standard" id="us-volumes" omit="printSymbol">
@@ -4310,7 +4314,7 @@
       1824 are defined in <a href="#brit-volumes">Table
          12</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
 
    </p>
    <table xmlns:u="http://aurora.regenstrief.org/UCUM" class="standard" id="brit-volumes" omit="printSymbol">
@@ -4472,7 +4476,7 @@
       The avoirdupois system of mass units is defined in <a href="#avoirdupois">Table
          13</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
 
    </p>
    <p class="comment">
@@ -4613,7 +4617,7 @@
       The troy system of mass units is defined in <a href="#troy">Table
          14</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
 
    </p>
    <p class="comment">
@@ -4698,7 +4702,7 @@
       The apothecaries' system of mass units is defined in <a href="#apoth">Table
          15</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
 
    </p>
    <table xmlns:u="http://aurora.regenstrief.org/UCUM" class="standard" id="apoth" omit="printSymbol">
@@ -4799,7 +4803,7 @@
       The units of length as used in typesetting are defined in <a href="#typeset">Table
          16</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
 
    </p>
    <table xmlns:u="http://aurora.regenstrief.org/UCUM" class="standard" id="typeset" omit="printSymbol">
@@ -4978,7 +4982,7 @@
       The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. Full name and print symbol are either not standardized or
       standardized by other bodies and are out of scope of <em>The Unified Code for Units of Measure</em>.
       &nbsp;<strong><sup>&nbsp;■4</sup></strong>
@@ -5362,7 +5366,7 @@
       Units used mainly in clinical medicine are defined in <a href="#clinical">Table
          18</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-34">§34</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       The function pair denoted “<code>hpX(1 l)</code>” is
       defined as <em>f</em><sub>hp X</sub>(<em>x</em>) = - lg <em>x</em> to
@@ -5835,7 +5839,7 @@
       in <a href="#chemical">Table
          19</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-43">§43</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       The function pair denoted “<code>ph(1 mol/l)</code>” is
       defined as <em>f</em><sub>pH</sub>(<em>x</em>) = - lg <em>x</em> to
@@ -6685,7 +6689,7 @@
       quantities of the same kind are defined in <a href="#levels">Table
          20</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-43">§43</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       The function pairs denoted “<code>ln</code>”
       “<code>lg</code>” and “<code>2lg</code>” are
@@ -6864,7 +6868,7 @@
       The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,”
-      “M,” “value,” and “definition” are
+      “M,” “definition value,” and “definition unit” are
       normative. Full name and print symbol are either not standardized or
       standardized by other bodies and are out of scope of <em>The Unified Code for Units of Measure</em>.
       &nbsp;<strong><sup>&nbsp;■4</sup></strong>
@@ -7126,7 +7130,7 @@
       &nbsp;<strong><sup>&nbsp;■1</sup></strong>
       Units used in information technology are defined in table 22.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-43">§43</a>.
+      The meaning of the columns is declared in <a class="termref" href="#para-30">§30</a>.2.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       The function pair denoted “<code>ld</code>” is defined as
       the dual logarithm with its respective inverse function
@@ -7231,7 +7235,14 @@
       technology as proposed by the IEEE are defined in <a href="#infopfx">Table
          23</a>.
       &nbsp;<strong><sup>&nbsp;■2</sup></strong>
-      The meaning of the columns is declared in <a class="termref" href="#para-49">§49</a>.2.
+      There are five columns titled “name,” “print,”
+         “c/s,” “c/i,” and “value.” The name
+         is the full (official) name of the prefix. The symbol recommended for
+         use in print is listed in the column “print.”
+         “C/s,” and “c/i” list the symbol in the case
+         sensitive and the case insensitive variants respectively. The value
+         is the value by which the prefix-less unit atom would be multiplied
+         to arrive at the value of the prefixed unit.
       &nbsp;<strong><sup>&nbsp;■3</sup></strong>
       Only the columns titled “c/s,” “c/i,” and
       “value,” are normative. Full name and print symbol are out
