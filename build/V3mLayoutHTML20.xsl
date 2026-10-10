@@ -28,12 +28,14 @@ This is Paul's 9/10/01 file with a LIMITED number of changes as detailed below.
 						documents like the RIM and Vocabulary that do NOT have "spec" as the root, which are 
 						rooted in 'RIM' and 'VOC', respectively -->
 				</title>
-				<link rel="stylesheet" type="text/css" href="v3m00.css"/>
+				<link rel="stylesheet" type="text/css" href="assets/css/v3m00.css"/>
 				<style type="text/css">
 					<xsl:apply-templates select="." mode="css"/>
 				</style>
-     <link rel="stylesheet" type="text/css" href="xml-verbatim.css"/>
-     <script type="text/javascript" src="xml-verbatim.js"/>
+     <link rel="stylesheet" type="text/css" href="assets/css/xml-verbatim.css"/>
+     <xsl:if test="//@onclick[contains(., 'xmlVerbatimClick')]">
+       <script type="text/javascript" src="xml-verbatim.js"/>
+     </xsl:if>
 			</head>
 			<body>
 <!--
