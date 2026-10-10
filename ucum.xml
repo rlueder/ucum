@@ -433,7 +433,7 @@
                 | &lt;<emph>component</emph>&gt;</td></tr><tr valign="top"><td>&lt;<emph>main-term</emph>&gt;</td><td>::=</td><td>“<code>/</code>”&lt;<emph>term</emph>&gt;<br/>
                 | &lt;<emph>term</emph>&gt;</td></tr><tr valign="top"><td>&lt;<emph>annotation</emph>&gt;</td><td>::=</td><td>“<code>{</code>”&lt;<emph>ANNOTATION-STRING</emph>&gt;“<code>}</code>”</td></tr></table><caption>
             The complete syntax in the Backus-Naur Form.
-          </caption></exhibit><graphic source="graphics/https://raw.githubusercontent.com/ucum-org/ucum/main/assets/images/ucum-state-automaton.gif" alt="Pushdown-state automaton describing the syntax."/></div2><div2><head>The Predicate “Metric”</head><p id="para-metric" name="metric and non-metric unit atoms"><emph role="strong"><anchor id="para-11">§11</anchor> metric and non-metric unit atoms</emph>
+          </caption></exhibit><graphic source="https://raw.githubusercontent.com/ucum-org/ucum/main/assets/images/ucum-state-automaton.gif" alt="Pushdown-state automaton describing the syntax."/></div2><div2><head>The Predicate “Metric”</head><p id="para-metric" name="metric and non-metric unit atoms"><emph role="strong"><anchor id="para-11">§11</anchor> metric and non-metric unit atoms</emph>
        
      <emph role="strong"><emph role="sup"> ■1</emph></emph> Only metric unit atoms may be combined with a prefix.
            <emph role="strong"><emph role="sup"> ■2</emph></emph> To be metric or not to be metric is a predicate assigned to
