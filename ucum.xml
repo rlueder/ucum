@@ -433,7 +433,7 @@
                 | &lt;<emph>component</emph>&gt;</td></tr><tr valign="top"><td>&lt;<emph>main-term</emph>&gt;</td><td>::=</td><td>“<code>/</code>”&lt;<emph>term</emph>&gt;<br/>
                 | &lt;<emph>term</emph>&gt;</td></tr><tr valign="top"><td>&lt;<emph>annotation</emph>&gt;</td><td>::=</td><td>“<code>{</code>”&lt;<emph>ANNOTATION-STRING</emph>&gt;“<code>}</code>”</td></tr></table><caption>
             The complete syntax in the Backus-Naur Form.
-          </caption></exhibit><graphic source="graphics/https://raw.githubusercontent.com/ucum-org/ucum/main/assets/images/ucum-state-automaton.gif" alt="Pushdown-state automaton describing the syntax."/></div2><div2><head>The Predicate “Metric”</head><p id="para-metric" name="metric and non-metric unit atoms"><emph role="strong"><anchor id="para-11">§11</anchor> metric and non-metric unit atoms</emph>
+          </caption></exhibit><graphic source="https://raw.githubusercontent.com/ucum-org/ucum/main/assets/images/ucum-state-automaton.gif" alt="Pushdown-state automaton describing the syntax."/></div2><div2><head>The Predicate “Metric”</head><p id="para-metric" name="metric and non-metric unit atoms"><emph role="strong"><anchor id="para-11">§11</anchor> metric and non-metric unit atoms</emph>
        
      <emph role="strong"><emph role="sup"> ■1</emph></emph> Only metric unit atoms may be combined with a prefix.
            <emph role="strong"><emph role="sup"> ■2</emph></emph> To be metric or not to be metric is a predicate assigned to
@@ -752,9 +752,9 @@
        
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             Special units are marked in the definition tables for unit atoms by a
-            bullet (‘•’) in the column titled “value”
+            bullet (‘•’) in the column titled “definition value”
             and a special expression in the column titled
-            “definition”. The BNF for the special expression is &lt;<emph>special-unit</emph>&gt; ::= &lt;<emph>function-symbol</emph>&gt;“<code>(</code>”&lt;<emph>floating-point-number</emph>&gt;“<code> </code>”&lt;<emph>term</emph>&gt;“<code>)</code>” The function symbols are defined as
+            “definition unit”. The BNF for the special expression is &lt;<emph>special-unit</emph>&gt; ::= &lt;<emph>function-symbol</emph>&gt;“<code>(</code>”&lt;<emph>floating-point-number</emph>&gt;“<code> </code>”&lt;<emph>term</emph>&gt;“<code>)</code>” The function symbols are defined as
             needed.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
             Special expressions are <emph>not</emph> valid expressions in <emph>The Unified Code for Units of Measure</emph>,
@@ -786,8 +786,8 @@
        
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             Arbitrary units are marked in the definition tables for unit atoms by a
-            bullet (‘•’) in the column titled “value”
-            and a bullet in the column titled “definition”.
+            bullet (‘•’) in the column titled “definition value”
+            and a bullet in the column titled “definition unit”.
           </p></div2></div1><div1><head>Tables of Terminal Symbols</head><div2><head>Prefixes</head><p name="prefixes"><emph role="strong"><anchor id="para-27">§27</anchor> prefixes</emph>
        
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
@@ -891,7 +891,8 @@
             Dimensionless unit atoms are defined in <tabref ref="dimless"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph> There are seven columns titled “name,”
             “print,” “c/s,” “c/i,”
-            “M,” “value,” and “definition.”
+            “M,” “definition value,” and
+            “definition unit.”
             The name is the full (official) name of the unit. The symbol
             recommended for use in print is listed in the column
             “print.” “C/s,” and “c/i” list the
@@ -899,11 +900,13 @@
             respectively. 
             The column “M” specifies whether this is a
             metric unit. 
-            The definition is a valid case sensitive expression of
-            <emph>The Unified Code for Units of Measure</emph> that defines the unit atom.
+            The definition value is the numeric factor by which the definition
+            unit is multiplied. The definition unit is a valid case sensitive
+            expression of <emph>The Unified Code for Units of Measure</emph> that defines the unit atom.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. Full name and print symbol are out of scope of <emph>The Unified Code for Units of Measure</emph>.
            <emph role="strong"><emph role="sup"> ■4</emph></emph>
             The units named “parts per <emph>N</emph>” are provided to be used
@@ -934,24 +937,29 @@
             SI units are defined by the international <emph>Conférence
               Générale des Poids et Mesures</emph> (CGPM).  <emph>The Unified Code for Units of Measure</emph> definitions
             for those units are given in <tabref ref="si"/>.
-           <emph role="strong"><emph role="sup"> ■2</emph></emph> There are seven columns titled “name,”
-            “print,” “c/s,” “c/i,”
-            “M,” “value,” and “definition.”
-            The name is the full (official) name of the unit. The symbol
+           <emph role="strong"><emph role="sup"> ■2</emph></emph> There are eight columns titled “name,”
+            “kind of quantity,” “print,” “c/s,”
+            “c/i,”
+            “M,” “definition value,” and
+            “definition unit.”
+            The name is the full (official) name of the unit. The kind of
+            quantity describes the property measured by the unit. The symbol
             recommended for use in print is listed in the column
             “print.” “C/s,” and “c/i” list the
             symbol in the case sensitive and the case insensitive variants
             respectively. 
             The column “M” specifies whether this is a
             metric unit. 
-            The definition
-            is a valid case sensitive expression of <emph>The Unified Code for Units of Measure</emph> that defines the unit
-            atom.
+            The definition value is the numeric factor by which the definition
+            unit is multiplied. The definition unit is a valid case sensitive
+            expression of <emph>The Unified Code for Units of Measure</emph> that defines the unit atom.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. Full name and print symbol are defined by the CGPM and are
-            out of scope of <emph>The Unified Code for Units of Measure</emph>.
+            out of scope of <emph>The Unified Code for Units of Measure</emph>. Kind of quantity is explanatory and is not
+            normative.
            <emph role="strong"><emph role="sup"> ■4</emph></emph>
             The function pair denoted “<code>cel(1 K)</code>” is
             defined as <emph>f</emph><emph role="sub">C</emph>(<emph>x</emph>) = <emph>x</emph> - 273.15 to
@@ -977,7 +985,8 @@
             The meaning of the columns is declared in <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. Full name and print symbol are defined by ISO 1000 and are
             out of scope of <emph>The Unified Code for Units of Measure</emph>.
           </p><table id="iso1000"><tr><th>name</th><th>kind of quantity</th><th>print</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>Other units from ISO 1000, ISO 2955, and some from ANSI X3.50.</caption><tr><td>gon, grade </td><td>plane angle </td><td><emph role="sup">g</emph> </td><td><code>gon</code> </td><td><code>GON</code> </td><td>no</td><td>0.9 </td><td><code>deg</code> </td></tr><tr><td>degree </td><td>plane angle </td><td>° </td><td><code>deg</code> </td><td><code>DEG</code> </td><td>no</td><td>2 </td><td><code>[pi].rad/360</code> </td></tr><tr><td>minute </td><td>plane angle </td><td>' </td><td><code>'</code> </td><td><code>'</code> </td><td>no</td><td>1 </td><td><code>deg/60</code> </td></tr><tr><td>second </td><td>plane angle </td><td>'' </td><td><code>''</code> </td><td><code>''</code> </td><td>no</td><td>1 </td><td><code>'/60</code> </td></tr><tr><td>liter </td><td>volume </td><td>l </td><td><code>l</code> </td><td><code>L</code> </td><td>yes</td><td>1 </td><td><code>dm3</code> </td></tr><tr><td>liter </td><td>volume </td><td>L </td><td><code>L</code> </td><td><code>L</code> </td><td>yes</td><td>1 </td><td><code>l</code> </td></tr><tr><td>are </td><td>area </td><td>a </td><td><code>ar</code> </td><td><code>AR</code> </td><td>yes</td><td>100 </td><td><code>m2</code> </td></tr><tr><td>minute </td><td>time </td><td>min </td><td><code>min</code> </td><td><code>MIN</code> </td><td>no</td><td>60 </td><td><code>s</code> </td></tr><tr><td>hour </td><td>time </td><td>h </td><td><code>h</code> </td><td><code>HR</code> </td><td>no</td><td>60 </td><td><code>min</code> </td></tr><tr><td>day </td><td>time </td><td>d </td><td><code>d</code> </td><td><code>D</code> </td><td>no</td><td>24 </td><td><code>h</code> </td></tr><tr><td>tropical year </td><td>time </td><td>a<emph role="sub">t</emph> </td><td><code>a_t</code> </td><td><code>ANN_T</code> </td><td>no</td><td>365.24219 </td><td><code>d</code> </td></tr><tr><td>mean Julian year </td><td>time </td><td>a<emph role="sub">j</emph> </td><td><code>a_j</code> </td><td><code>ANN_J</code> </td><td>no</td><td>365.25 </td><td><code>d</code> </td></tr><tr><td>mean Gregorian year </td><td>time </td><td>a<emph role="sub">g</emph> </td><td><code>a_g</code> </td><td><code>ANN_G</code> </td><td>no</td><td>365.2425 </td><td><code>d</code> </td></tr><tr><td>year </td><td>time </td><td>a </td><td><code>a</code> </td><td><code>ANN</code> </td><td>no</td><td>1 </td><td><code>a_j</code> </td></tr><tr><td>week </td><td>time </td><td>wk </td><td><code>wk</code> </td><td><code>WK</code> </td><td>no</td><td>7 </td><td><code>d</code> </td></tr><tr><td>synodal month </td><td>time </td><td>mo<emph role="sub">s</emph> </td><td><code>mo_s</code> </td><td><code>MO_S</code> </td><td>no</td><td>29.53059 </td><td><code>d</code> </td></tr><tr><td>mean Julian month </td><td>time </td><td>mo<emph role="sub">j</emph> </td><td><code>mo_j</code> </td><td><code>MO_J</code> </td><td>no</td><td>1 </td><td><code>a_j/12</code> </td></tr><tr><td>mean Gregorian month </td><td>time </td><td>mo<emph role="sub">g</emph> </td><td><code>mo_g</code> </td><td><code>MO_G</code> </td><td>no</td><td>1 </td><td><code>a_g/12</code> </td></tr><tr><td>month </td><td>time </td><td>mo </td><td><code>mo</code> </td><td><code>MO</code> </td><td>no</td><td>1 </td><td><code>mo_j</code> </td></tr><tr><td>tonne </td><td>mass </td><td>t </td><td><code>t</code> </td><td><code>TNE</code> </td><td>yes</td><td>1 × 10<emph role="sup">3</emph> </td><td><code>kg</code> </td></tr><tr><td>bar </td><td>pressure </td><td>bar </td><td><code>bar</code> </td><td><code>BAR</code> </td><td>yes</td><td>1 × 10<emph role="sup">5</emph> </td><td><code>Pa</code> </td></tr><tr><td>unified atomic mass unit </td><td>mass </td><td>u </td><td><code>u</code> </td><td><code>AMU</code> </td><td>yes</td><td>1.66053906660 × 10<emph role="sup">-24</emph> </td><td><code>g</code> </td></tr><tr><td>electronvolt </td><td>energy </td><td>eV </td><td><code>eV</code> </td><td><code>EV</code> </td><td>yes</td><td>1 </td><td><code>[e].V</code> </td></tr><tr><td>astronomic unit </td><td>length </td><td>AU </td><td><code>AU</code> </td><td><code>ASU</code> </td><td>no</td><td>149597.870691 </td><td><code>Mm</code> </td></tr><tr><td>parsec </td><td>length </td><td>pc </td><td><code>pc</code> </td><td><code>PRS</code> </td><td>yes</td><td>3.085678 × 10<emph role="sup">16</emph> </td><td><code>m</code> </td></tr></table><comment><p class="comment">
@@ -1089,7 +1098,8 @@
             The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. Full name and print symbol are defined by ISO 1000 and are
             out of scope of <emph>The Unified Code for Units of Measure</emph>.
           </p><table id="const"><tr><th>name</th><th>kind of quantity</th><th>print</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>Natural units.</caption><tr><td>velocity of light </td><td>velocity </td><td><emph>c</emph> </td><td><code>[c]</code> </td><td><code>[C]</code> </td><td>yes</td><td>299792458 </td><td><code>m/s</code> </td></tr><tr><td>Planck constant </td><td>action </td><td><emph>h</emph> </td><td><code>[h]</code> </td><td><code>[H]</code> </td><td>yes</td><td>6.62607015 × 10<emph role="sup">-34</emph> </td><td><code>J.s</code> </td></tr><tr><td>Boltzmann constant </td><td>(unclassified) </td><td><emph>k</emph> </td><td><code>[k]</code> </td><td><code>[K]</code> </td><td>yes</td><td>1.380649 × 10<emph role="sup">-23</emph> </td><td><code>J/K</code> </td></tr><tr><td>permittivity of vacuum </td><td>electric permittivity </td><td><emph>ε<emph role="sub"><r>0</r></emph></emph> </td><td><code>[eps_0]</code> </td><td><code>[EPS_0]</code> </td><td>yes</td><td>8.854187817 × 10<emph role="sup">-12</emph> </td><td><code>F/m</code> </td></tr><tr><td>permeability of vacuum </td><td>magnetic permeability </td><td><emph>μ<emph role="sub"><r>0</r></emph></emph> </td><td><code>[mu_0]</code> </td><td><code>[MU_0]</code> </td><td>yes</td><td>1 </td><td><code>4.[pi].10*-7.N/A2</code> </td></tr><tr><td>elementary charge </td><td>electric charge </td><td><emph>e</emph> </td><td><code>[e]</code> </td><td><code>[E]</code> </td><td>yes</td><td>1.602176634 × 10<emph role="sup">-19</emph> </td><td><code>C</code> </td></tr><tr><td>electron mass </td><td>mass </td><td><emph>m<emph role="sub"><r>e</r></emph></emph> </td><td><code>[m_e]</code> </td><td><code>[M_E]</code> </td><td>yes</td><td>9.1093837139 × 10<emph role="sup">-31</emph> </td><td><code>kg</code> </td></tr><tr><td>proton mass </td><td>mass </td><td><emph>m<emph role="sub"><r>p</r></emph></emph> </td><td><code>[m_p]</code> </td><td><code>[M_P]</code> </td><td>yes</td><td>1.67262192595 × 10<emph role="sup">-27</emph> </td><td><code>kg</code> </td></tr><tr><td>Newtonian constant of gravitation </td><td>(unclassified) </td><td><emph>G</emph> </td><td><code>[G]</code> </td><td><code>[GC]</code> </td><td>yes</td><td>6.67430 × 10<emph role="sup">-11</emph> </td><td><code>m3.kg-1.s-2</code> </td></tr><tr><td>standard acceleration of free fall </td><td>acceleration </td><td><emph>g<emph role="sub">n</emph></emph> </td><td><code>[g]</code> </td><td><code>[G]</code> </td><td>yes</td><td>9.80665 </td><td><code>m/s2</code> </td></tr><tr><td>standard atmosphere </td><td>pressure </td><td>atm </td><td><code>atm</code> </td><td><code>ATM</code> </td><td>no</td><td>101325 </td><td><code>Pa</code> </td></tr><tr><td>light-year </td><td>length </td><td>l.y. </td><td><code>[ly]</code> </td><td><code>[LY]</code> </td><td>yes</td><td>1 </td><td><code>[c].a_j</code> </td></tr><tr><td>gram-force </td><td>force </td><td>gf </td><td><code>gf</code> </td><td><code>GF</code> </td><td>yes</td><td>1 </td><td><code>g.[g]</code> </td></tr><tr><td>pound force </td><td>force </td><td>lbf </td><td><code>[lbf_av]</code> </td><td><code>[LBF_AV]</code> </td><td>no</td><td>1 </td><td><code>[lb_av].[g]</code> </td></tr></table><comment><p class="comment">
@@ -1118,7 +1128,8 @@
             The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. Full name and print symbol are out of scope of <emph>The Unified Code for Units of Measure</emph>.
           </p><table id="cgs"><tr><th>name</th><th>kind of quantity</th><th>print</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>CGS units</caption><tr><td>Kayser </td><td>lineic number </td><td>K </td><td><code>Ky</code> </td><td><code>KY</code> </td><td>yes</td><td>1 </td><td><code>cm-1</code> </td></tr><tr><td>Gal </td><td>acceleration </td><td>Gal </td><td><code>Gal</code> </td><td><code>GL</code> </td><td>yes</td><td>1 </td><td><code>cm/s2</code> </td></tr><tr><td>dyne </td><td>force </td><td>dyn </td><td><code>dyn</code> </td><td><code>DYN</code> </td><td>yes</td><td>1 </td><td><code>g.cm/s2</code> </td></tr><tr><td>erg </td><td>energy </td><td>erg </td><td><code>erg</code> </td><td><code>ERG</code> </td><td>yes</td><td>1 </td><td><code>dyn.cm</code> </td></tr><tr><td>Poise </td><td>dynamic viscosity </td><td>P </td><td><code>P</code> </td><td><code>P</code> </td><td>yes</td><td>1 </td><td><code>dyn.s/cm2</code> </td></tr><tr><td>Biot </td><td>electric current </td><td>Bi </td><td><code>Bi</code> </td><td><code>BI</code> </td><td>yes</td><td>10 </td><td><code>A</code> </td></tr><tr><td>Stokes </td><td>kinematic viscosity </td><td>St </td><td><code>St</code> </td><td><code>ST</code> </td><td>yes</td><td>1 </td><td><code>cm2/s</code> </td></tr><tr><td>Maxwell </td><td>flux of magnetic induction </td><td>Mx </td><td><code>Mx</code> </td><td><code>MX</code> </td><td>yes</td><td>1 × 10<emph role="sup">-8</emph> </td><td><code>Wb</code> </td></tr><tr><td>Gauss </td><td>magnetic flux density </td><td>Gs, G </td><td><code>G</code> </td><td><code>GS</code> </td><td>yes</td><td>1 × 10<emph role="sup">-4</emph> </td><td><code>T</code> </td></tr><tr><td>Oersted </td><td>magnetic field intensity </td><td>Oe </td><td><code>Oe</code> </td><td><code>OE</code> </td><td>yes</td><td>250 </td><td><code>/[pi].A/m</code> </td></tr><tr><td>Gilbert </td><td>magnetic tension </td><td>Gb </td><td><code>Gb</code> </td><td><code>GB</code> </td><td>yes</td><td>1 </td><td><code>Oe.cm</code> </td></tr><tr><td>stilb </td><td>lum. intensity density </td><td>sb </td><td><code>sb</code> </td><td><code>SB</code> </td><td>yes</td><td>1 </td><td><code>cd/cm2</code> </td></tr><tr><td>Lambert </td><td>brightness </td><td>L </td><td><code>Lmb</code> </td><td><code>LMB</code> </td><td>yes</td><td>1 </td><td><code>cd/cm2/[pi]</code> </td></tr><tr><td>phot </td><td>illuminance </td><td>ph </td><td><code>ph</code> </td><td><code>PHT</code> </td><td>yes</td><td>1 × 10<emph role="sup">-4</emph> </td><td><code>lx</code> </td></tr><tr><td>Curie </td><td>radioactivity </td><td>Ci </td><td><code>Ci</code> </td><td><code>CI</code> </td><td>yes</td><td>3.7 × 10<emph role="sup">10</emph> </td><td><code>Bq</code> </td></tr><tr><td>Roentgen </td><td>ion dose </td><td>R </td><td><code>R</code> </td><td><code>ROE</code> </td><td>yes</td><td>2.58 × 10<emph role="sup">-4</emph> </td><td><code>C/kg</code> </td></tr><tr><td>radiation absorbed dose </td><td>energy dose </td><td>RAD </td><td><code>RAD</code> </td><td><code>[RAD]</code> </td><td>yes</td><td>100 </td><td><code>erg/g</code> </td></tr><tr><td>radiation equivalent man </td><td>dose equivalent </td><td>REM </td><td><code>REM</code> </td><td><code>[REM]</code> </td><td>yes</td><td>1 </td><td><code>RAD</code> </td></tr></table><comment><p class="comment">
             Although the CGPM “accepts” only very few CGS units “for use with
@@ -1246,13 +1257,14 @@
             “print” is not available.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. The full name is out of scope of <emph>The Unified Code for Units of Measure</emph>.
            <emph role="strong"><emph role="sup"> ■4</emph></emph>
             The special symbols for “square inch,” “cubic
             foot,” etc. are deprecated. The preferred expressions use the
             exponents 2 and 3 respectively as shown in the column
-            “definition”
+            “definition unit”
           </p><table id="intcust" omit="printSymbol"><tr><th>name</th><th>kind of quantity</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>International customary units</caption><tr><td>inch </td><td>length </td><td><code>[in_i]</code> </td><td><code>[IN_I]</code> </td><td>no</td><td>2.54 </td><td><code>cm</code> </td></tr><tr><td>foot </td><td>length </td><td><code>[ft_i]</code> </td><td><code>[FT_I]</code> </td><td>no</td><td>12 </td><td><code>[in_i]</code> </td></tr><tr><td>yard </td><td>length </td><td><code>[yd_i]</code> </td><td><code>[YD_I]</code> </td><td>no</td><td>3 </td><td><code>[ft_i]</code> </td></tr><tr><td>mile </td><td>length </td><td><code>[mi_i]</code> </td><td><code>[MI_I]</code> </td><td>no</td><td>5280 </td><td><code>[ft_i]</code> </td></tr><tr><td>fathom </td><td>depth of water </td><td><code>[fth_i]</code> </td><td><code>[FTH_I]</code> </td><td>no</td><td>6 </td><td><code>[ft_i]</code> </td></tr><tr><td>nautical mile </td><td>length </td><td><code>[nmi_i]</code> </td><td><code>[NMI_I]</code> </td><td>no</td><td>1852 </td><td><code>m</code> </td></tr><tr><td>knot </td><td>velocity </td><td><code>[kn_i]</code> </td><td><code>[KN_I]</code> </td><td>no</td><td>1 </td><td><code>[nmi_i]/h</code> </td></tr><tr><td>square inch </td><td>area </td><td><code>[sin_i]</code> </td><td><code>[SIN_I]</code> </td><td>no</td><td>1 </td><td><code>[in_i]2</code> </td></tr><tr><td>square foot </td><td>area </td><td><code>[sft_i]</code> </td><td><code>[SFT_I]</code> </td><td>no</td><td>1 </td><td><code>[ft_i]2</code> </td></tr><tr><td>square yard </td><td>area </td><td><code>[syd_i]</code> </td><td><code>[SYD_I]</code> </td><td>no</td><td>1 </td><td><code>[yd_i]2</code> </td></tr><tr><td>cubic inch </td><td>volume </td><td><code>[cin_i]</code> </td><td><code>[CIN_I]</code> </td><td>no</td><td>1 </td><td><code>[in_i]3</code> </td></tr><tr><td>cubic foot </td><td>volume </td><td><code>[cft_i]</code> </td><td><code>[CFT_I]</code> </td><td>no</td><td>1 </td><td><code>[ft_i]3</code> </td></tr><tr><td>cubic yard </td><td>volume </td><td><code>[cyd_i]</code> </td><td><code>[CYD_I]</code> </td><td>no</td><td>1 </td><td><code>[yd_i]3</code> </td></tr><tr><td>board foot </td><td>volume </td><td><code>[bf_i]</code> </td><td><code>[BF_I]</code> </td><td>no</td><td>144 </td><td><code>[in_i]3</code> </td></tr><tr><td>cord </td><td>volume </td><td><code>[cr_i]</code> </td><td><code>[CR_I]</code> </td><td>no</td><td>128 </td><td><code>[ft_i]3</code> </td></tr><tr><td>mil </td><td>length </td><td><code>[mil_i]</code> </td><td><code>[MIL_I]</code> </td><td>no</td><td>1 × 10<emph role="sup">-3</emph> </td><td><code>[in_i]</code> </td></tr><tr><td>circular mil </td><td>area </td><td><code>[cml_i]</code> </td><td><code>[CML_I]</code> </td><td>no</td><td>1 </td><td><code>[pi]/4.[mil_i]2</code> </td></tr><tr><td>hand </td><td>height of horses </td><td><code>[hd_i]</code> </td><td><code>[HD_I]</code> </td><td>no</td><td>4 </td><td><code>[in_i]</code> </td></tr></table><comment><p class="comment">
             In general the international customary units are effective in the
             U.S. and in Great Britain since 1959. We are unsure, however, about
@@ -1304,7 +1316,7 @@
             U.S. Metric Law of 1866 and the definition of foot and yard that was
             valid from 1893 until 1959.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in <termref ref="para-30">§30</termref>.2.
           <emph role="small">
             [Barry N. Taylor, <emph>Guide to the Use of the International System of
               Units (SI)</emph> [NIST Special Publication 811], National Institute for
@@ -1322,7 +1334,7 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph><tabref ref="brit-length"/> defines symbols for the older British Imperial lengths as of
             the British Weights and Measures Act of 1824.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
           </p><table id="brit-length" omit="printSymbol"><tr><th>name</th><th>kind of quantity</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>British Imperial lengths</caption><tr><td>inch </td><td>length </td><td><code>[in_br]</code> </td><td><code>[IN_BR]</code> </td><td>no</td><td>2.539998 </td><td><code>cm</code> </td></tr><tr><td>foot </td><td>length </td><td><code>[ft_br]</code> </td><td><code>[FT_BR]</code> </td><td>no</td><td>12 </td><td><code>[in_br]</code> </td></tr><tr><td>rod </td><td>length </td><td><code>[rd_br]</code> </td><td><code>[RD_BR]</code> </td><td>no</td><td>16.5 </td><td><code>[ft_br]</code> </td></tr><tr><td>Gunter's chain </td><td>length </td><td><code>[ch_br]</code> </td><td><code>[CH_BR]</code> </td><td>no</td><td>4 </td><td><code>[rd_br]</code> </td></tr><tr><td>link for Gunter's chain </td><td>length </td><td><code>[lk_br]</code> </td><td><code>[LK_BR]</code> </td><td>no</td><td>1 </td><td><code>[ch_br]/100</code> </td></tr><tr><td>fathom </td><td>length </td><td><code>[fth_br]</code> </td><td><code>[FTH_BR]</code> </td><td>no</td><td>6 </td><td><code>[ft_br]</code> </td></tr><tr><td>pace </td><td>length </td><td><code>[pc_br]</code> </td><td><code>[PC_BR]</code> </td><td>no</td><td>2.5 </td><td><code>[ft_br]</code> </td></tr><tr><td>yard </td><td>length </td><td><code>[yd_br]</code> </td><td><code>[YD_BR]</code> </td><td>no</td><td>3 </td><td><code>[ft_br]</code> </td></tr><tr><td>mile </td><td>length </td><td><code>[mi_br]</code> </td><td><code>[MI_BR]</code> </td><td>no</td><td>5280 </td><td><code>[ft_br]</code> </td></tr><tr><td>nautical mile </td><td>length </td><td><code>[nmi_br]</code> </td><td><code>[NMI_BR]</code> </td><td>no</td><td>6080 </td><td><code>[ft_br]</code> </td></tr><tr><td>knot </td><td>velocity </td><td><code>[kn_br]</code> </td><td><code>[KN_BR]</code> </td><td>no</td><td>1 </td><td><code>[nmi_br]/h</code> </td></tr><tr><td>acre </td><td>area </td><td><code>[acr_br]</code> </td><td><code>[ACR_BR]</code> </td><td>no</td><td>4840 </td><td><code>[yd_br]2</code> </td></tr></table><comment><p class="comment">
             The older British Imperial system is predominantly of historical
             interest. However, it may be that some former members of the
@@ -1346,7 +1358,7 @@
             are different for fluid goods (wine) and dry goods (grain), are
             defined in <tabref ref="us-volumes"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in <termref ref="para-30">§30</termref>.2.
           </p><table id="us-volumes" omit="printSymbol"><tr><th>name</th><th>kind of quantity</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>U.S. volumes including so called “dry measures”</caption><tr><td>Queen Anne's wine gallon </td><td>fluid volume </td><td><code>[gal_us]</code> </td><td><code>[GAL_US]</code> </td><td>no</td><td>231 </td><td><code>[in_i]3</code> </td></tr><tr><td>barrel </td><td>fluid volume </td><td><code>[bbl_us]</code> </td><td><code>[BBL_US]</code> </td><td>no</td><td>42 </td><td><code>[gal_us]</code> </td></tr><tr><td>quart </td><td>fluid volume </td><td><code>[qt_us]</code> </td><td><code>[QT_US]</code> </td><td>no</td><td>1 </td><td><code>[gal_us]/4</code> </td></tr><tr><td>pint </td><td>fluid volume </td><td><code>[pt_us]</code> </td><td><code>[PT_US]</code> </td><td>no</td><td>1 </td><td><code>[qt_us]/2</code> </td></tr><tr><td>gill </td><td>fluid volume </td><td><code>[gil_us]</code> </td><td><code>[GIL_US]</code> </td><td>no</td><td>1 </td><td><code>[pt_us]/4</code> </td></tr><tr><td>fluid ounce </td><td>fluid volume </td><td><code>[foz_us]</code> </td><td><code>[FOZ_US]</code> </td><td>no</td><td>1 </td><td><code>[gil_us]/4</code> </td></tr><tr><td>fluid dram </td><td>fluid volume </td><td><code>[fdr_us]</code> </td><td><code>[FDR_US]</code> </td><td>no</td><td>1 </td><td><code>[foz_us]/8</code> </td></tr><tr><td>minim </td><td>fluid volume </td><td><code>[min_us]</code> </td><td><code>[MIN_US]</code> </td><td>no</td><td>1 </td><td><code>[fdr_us]/60</code> </td></tr><tr><td>cord </td><td>fluid volume </td><td><code>[crd_us]</code> </td><td><code>[CRD_US]</code> </td><td>no</td><td>128 </td><td><code>[ft_i]3</code> </td></tr><tr><td>bushel </td><td>dry volume </td><td><code>[bu_us]</code> </td><td><code>[BU_US]</code> </td><td>no</td><td>2150.42 </td><td><code>[in_i]3</code> </td></tr><tr><td>historical winchester gallon </td><td>dry volume </td><td><code>[gal_wi]</code> </td><td><code>[GAL_WI]</code> </td><td>no</td><td>1 </td><td><code>[bu_us]/8</code> </td></tr><tr><td>peck </td><td>dry volume </td><td><code>[pk_us]</code> </td><td><code>[PK_US]</code> </td><td>no</td><td>1 </td><td><code>[bu_us]/4</code> </td></tr><tr><td>dry quart </td><td>dry volume </td><td><code>[dqt_us]</code> </td><td><code>[DQT_US]</code> </td><td>no</td><td>1 </td><td><code>[pk_us]/8</code> </td></tr><tr><td>dry pint </td><td>dry volume </td><td><code>[dpt_us]</code> </td><td><code>[DPT_US]</code> </td><td>no</td><td>1 </td><td><code>[dqt_us]/2</code> </td></tr><tr><td>tablespoon </td><td>volume </td><td><code>[tbs_us]</code> </td><td><code>[TBS_US]</code> </td><td>no</td><td>1 </td><td><code>[foz_us]/2</code> </td></tr><tr><td>teaspoon </td><td>volume </td><td><code>[tsp_us]</code> </td><td><code>[TSP_US]</code> </td><td>no</td><td>1 </td><td><code>[tbs_us]/3</code> </td></tr><tr><td>cup </td><td>volume </td><td><code>[cup_us]</code> </td><td><code>[CUP_US]</code> </td><td>no</td><td>16 </td><td><code>[tbs_us]</code> </td></tr><tr><td>metric fluid ounce </td><td>fluid volume </td><td><code>[foz_m]</code> </td><td><code>[FOZ_M]</code> </td><td>no</td><td>30 </td><td><code>mL</code> </td></tr><tr><td>metric cup </td><td>volume </td><td><code>[cup_m]</code> </td><td><code>[CUP_M]</code> </td><td>no</td><td>240 </td><td><code>mL</code> </td></tr><tr><td>metric teaspoon </td><td>volume </td><td><code>[tsp_m]</code> </td><td><code>[TSP_M]</code> </td><td>no</td><td>5 </td><td><code>mL</code> </td></tr><tr><td>metric tablespoon </td><td>volume </td><td><code>[tbs_m]</code> </td><td><code>[TBS_M]</code> </td><td>no</td><td>15 </td><td><code>mL</code> </td></tr></table><comment><p class="comment">
             The U.S. fluid volumes have been defined based on Queen Anne's wine
             gallon which was in turn defined exactly as 231 cubic inch. Although
@@ -1376,7 +1388,7 @@
             British Imperial volumes according to the Weights and Measures Act of
             1824 are defined in <tabref ref="brit-volumes"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
           </p><table id="brit-volumes" omit="printSymbol"><tr><th>name</th><th>kind of quantity</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>British Imperial volumes</caption><tr><td>gallon </td><td>volume </td><td><code>[gal_br]</code> </td><td><code>[GAL_BR]</code> </td><td>no</td><td>4.54609 </td><td><code>l</code> </td></tr><tr><td>peck </td><td>volume </td><td><code>[pk_br]</code> </td><td><code>[PK_BR]</code> </td><td>no</td><td>2 </td><td><code>[gal_br]</code> </td></tr><tr><td>bushel </td><td>volume </td><td><code>[bu_br]</code> </td><td><code>[BU_BR]</code> </td><td>no</td><td>4 </td><td><code>[pk_br]</code> </td></tr><tr><td>quart </td><td>volume </td><td><code>[qt_br]</code> </td><td><code>[QT_BR]</code> </td><td>no</td><td>1 </td><td><code>[gal_br]/4</code> </td></tr><tr><td>pint </td><td>volume </td><td><code>[pt_br]</code> </td><td><code>[PT_BR]</code> </td><td>no</td><td>1 </td><td><code>[qt_br]/2</code> </td></tr><tr><td>gill </td><td>volume </td><td><code>[gil_br]</code> </td><td><code>[GIL_BR]</code> </td><td>no</td><td>1 </td><td><code>[pt_br]/4</code> </td></tr><tr><td>fluid ounce </td><td>volume </td><td><code>[foz_br]</code> </td><td><code>[FOZ_BR]</code> </td><td>no</td><td>1 </td><td><code>[gil_br]/5</code> </td></tr><tr><td>fluid dram </td><td>volume </td><td><code>[fdr_br]</code> </td><td><code>[FDR_BR]</code> </td><td>no</td><td>1 </td><td><code>[foz_br]/8</code> </td></tr><tr><td>minim </td><td>volume </td><td><code>[min_br]</code> </td><td><code>[MIN_BR]</code> </td><td>no</td><td>1 </td><td><code>[fdr_br]/60</code> </td></tr></table><comment><p class="comment">
             The British Weights and Measures Act of 1824 removed the medieval
             distinction between wine and grain measures and defined one unified
@@ -1406,7 +1418,7 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             The avoirdupois system of mass units is defined in <tabref ref="avoirdupois"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
           </p><comment><p class="comment">
             The avoirdupois system is used in the U.S. as well as in countries that
             use the British Imperial system. Avoirdupois is the default system of
@@ -1419,7 +1431,7 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             The troy system of mass units is defined in <tabref ref="troy"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
           </p><comment><p class="comment">
             The troy system originates in Troyes, a City in the Champagne (France)
             that hosted a major European fair. The troy system was later used for
@@ -1446,7 +1458,7 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             The apothecaries' system of mass units is defined in <tabref ref="apoth"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
           </p><table id="apoth" omit="printSymbol"><tr><th>name</th><th>kind of quantity</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>Apothecaries' weights</caption><tr><td>scruple </td><td>mass </td><td><code>[sc_ap]</code> </td><td><code>[SC_AP]</code> </td><td>no</td><td>20 </td><td><code>[gr]</code> </td></tr><tr><td>dram, drachm </td><td>mass </td><td><code>[dr_ap]</code> </td><td><code>[DR_AP]</code> </td><td>no</td><td>3 </td><td><code>[sc_ap]</code> </td></tr><tr><td>ounce </td><td>mass </td><td><code>[oz_ap]</code> </td><td><code>[OZ_AP]</code> </td><td>no</td><td>8 </td><td><code>[dr_ap]</code> </td></tr><tr><td>pound </td><td>mass </td><td><code>[lb_ap]</code> </td><td><code>[LB_AP]</code> </td><td>no</td><td>12 </td><td><code>[oz_ap]</code> </td></tr><tr><td>metric ounce </td><td>mass </td><td><code>[oz_m]</code> </td><td><code>[OZ_M]</code> </td><td>no</td><td>28 </td><td><code>g</code> </td></tr></table><comment><p class="comment">
             Note that some U.S. pharmacies still use this system of apothecaries'
             weights when measuring the amount of drugs. This system is very
@@ -1467,7 +1479,7 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             The units of length as used in typesetting are defined in <tabref ref="typeset"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in <termref ref="para-30">§30</termref>.2.
           </p><table id="typeset" omit="printSymbol"><tr><th>name</th><th>kind of quantity</th><th>c/s</th><th>c/i</th><th>M</th><th>definition value</th><th>definition unit</th></tr><caption>Units used in typesetting</caption><tr><td>line </td><td>length </td><td><code>[lne]</code> </td><td><code>[LNE]</code> </td><td>no</td><td>1 </td><td><code>[in_i]/12</code> </td></tr><tr><td>point </td><td>length </td><td><code>[pnt]</code> </td><td><code>[PNT]</code> </td><td>no</td><td>1 </td><td><code>[lne]/6</code> </td></tr><tr><td>pica </td><td>length </td><td><code>[pca]</code> </td><td><code>[PCA]</code> </td><td>no</td><td>12 </td><td><code>[pnt]</code> </td></tr><tr><td>Printer's point </td><td>length </td><td><code>[pnt_pr]</code> </td><td><code>[PNT_PR]</code> </td><td>no</td><td>0.013837 </td><td><code>[in_i]</code> </td></tr><tr><td>Printer's pica </td><td>length </td><td><code>[pca_pr]</code> </td><td><code>[PCA_PR]</code> </td><td>no</td><td>12 </td><td><code>[pnt_pr]</code> </td></tr><tr><td>pied, French foot </td><td>length </td><td><code>[pied]</code> </td><td><code>[PIED]</code> </td><td>no</td><td>32.48 </td><td><code>cm</code> </td></tr><tr><td>pouce, French inch </td><td>length </td><td><code>[pouce]</code> </td><td><code>[POUCE]</code> </td><td>no</td><td>1 </td><td><code>[pied]/12</code> </td></tr><tr><td>ligne, French line </td><td>length </td><td><code>[ligne]</code> </td><td><code>[LIGNE]</code> </td><td>no</td><td>1 </td><td><code>[pouce]/12</code> </td></tr><tr><td>didot, Didot's point </td><td>length </td><td><code>[didot]</code> </td><td><code>[DIDOT]</code> </td><td>no</td><td>1 </td><td><code>[ligne]/6</code> </td></tr><tr><td>cicero, Didot's pica </td><td>length </td><td><code>[cicero]</code> </td><td><code>[CICERO]</code> </td><td>no</td><td>12 </td><td><code>[didot]</code> </td></tr></table><comment><p class="comment">
             There are three systems of typesetter's lengths in use today:
             Françcois-Ambroise Didot (1730-1804), a publisher in Paris,
@@ -1494,7 +1506,8 @@
             The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. Full name and print symbol are either not standardized or
             standardized by other bodies and are out of scope of <emph>The Unified Code for Units of Measure</emph>.
            <emph role="strong"><emph role="sup"> ■4</emph></emph>
@@ -1575,7 +1588,7 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             Units used mainly in clinical medicine are defined in <tabref ref="clinical"/>. 
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-34">§34</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             The function pair denoted “<code>hpX(1 l)</code>” is
             defined as <emph>f</emph><emph role="sub">hp X</emph>(<emph>x</emph>) = - lg <emph>x</emph> to
@@ -1677,7 +1690,7 @@
             Units used mainly in chemical and biochemical laboratories are defined
             in <tabref ref="chemical"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-43">§43</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             The function pair denoted “<code>ph(1 mol/l)</code>” is
             defined as <emph>f</emph><emph role="sub">pH</emph>(<emph>x</emph>) = - lg <emph>x</emph> to
@@ -1936,7 +1949,7 @@
             Pseudo-units defined to express logarithms of ratios between two
             quantities of the same kind are defined in <tabref ref="levels"/>.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-43">§43</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             The function pairs denoted “<code>ln</code>”
             “<code>lg</code>” and “<code>2lg</code>” are
@@ -1973,7 +1986,8 @@
             The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,”
-            “M,” “value,” and “definition” are
+            “M,” “definition value,” and
+            “definition unit” are
             normative. Full name and print symbol are either not standardized or
             standardized by other bodies and are out of scope of <emph>The Unified Code for Units of Measure</emph>.
            <emph role="strong"><emph role="sup"> ■4</emph></emph>
@@ -2011,7 +2025,7 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             Units used in information technology are defined in table 22.
            <emph role="strong"><emph role="sup"> ■2</emph></emph>
-            The meaning of the columns is declared in  <termref ref="para-43">§43</termref>.
+            The meaning of the columns is declared in  <termref ref="para-30">§30</termref>.2.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             The function pair denoted “<code>ld</code>” is defined as
             the dual logarithm with its respective inverse function
@@ -2037,8 +2051,15 @@
      <emph role="strong"><emph role="sup"> ■1</emph></emph>
             The prefix symbols based on powers of two for use in information
             technology as proposed by the IEEE are defined in <tabref ref="infopfx"/>.
-           <emph role="strong"><emph role="sup"> ■2</emph></emph> 
-            The meaning of the columns is declared in <termref ref="para-49">§49</termref>.2.
+           <emph role="strong"><emph role="sup"> ■2</emph></emph>
+            There are five columns titled “name,” “print,”
+            “c/s,” “c/i,” and “value.” The name
+            is the full (official) name of the prefix. The symbol recommended for
+            use in print is listed in the column “print.”
+            “C/s,” and “c/i” list the symbol in the case
+            sensitive and the case insensitive variants respectively. The value
+            is the value by which the prefix-less unit atom would be multiplied
+            to arrive at the value of the prefixed unit.
            <emph role="strong"><emph role="sup"> ■3</emph></emph>
             Only the columns titled “c/s,” “c/i,” and
             “value,” are normative. Full name and print symbol are out

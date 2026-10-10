@@ -3,11 +3,13 @@ title: Functional Tests
 post_excerpt: A short summary to follow. 
 ---
 
-This page and the XML attachment are maintained by Grahame Grieve (grahameg@healthintersections.com.au). Contributions/Corrections are welcome, and are best made through the trac system.
+The UCUM functional test corpus is maintained in the [FHIR/Ucum-java repository](https://github.com/FHIR/Ucum-java). You can [view the XML test file](https://github.com/FHIR/Ucum-java/blob/master/src/test/resources/UcumFunctionalTests.xml) or [download it directly](https://raw.githubusercontent.com/FHIR/Ucum-java/master/src/test/resources/UcumFunctionalTests.xml).
+
+Contributions and corrections to the test corpus are welcome through [GitHub issues](https://github.com/FHIR/Ucum-java/issues) or pull requests in that repository. Corrections to this documentation can be submitted to [ucum-org/ucum](https://github.com/ucum-org/ucum).
 
 ## Conformance
 
-You may declare conformance to these UCUM functional tests if your implementation accepts the attached XML file as an input, and passes all the test cases below. You should always quote the most recent date from the history entries below when claiming conformance. You may qualify the conformance to particular kinds of cases if your functionality does not cover all the tests. Note that conformance to these tests does not equate to conformance to UCUM itself - though one could reasonably claim to be compliant with UCUM if one is conformant to these tests.
+You may declare conformance to these UCUM functional tests if your implementation accepts the linked XML file as an input, and passes all the test cases it contains. You should always quote the most recent date from the test corpus's history when claiming conformance. You may qualify the conformance to particular kinds of cases if your functionality does not cover all the tests. Note that conformance to these tests does not equate to conformance to UCUM itself - though one could reasonably claim to be compliant with UCUM if one is conformant to these tests.
 
 This file is copyright © 2008 - 2009 Grahame Grieve and other contributors:
 
